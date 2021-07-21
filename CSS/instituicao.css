@@ -1,14 +1,16 @@
 .sessao-ensino {
     padding-top: 25px;
     position: sticky;
-    height: 91.5vh;
+    height: 100vh;
+    margin-bottom: 300px;
 }
 
 .sessao-ensino .sessao-ensino__content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 10px;
+    padding: 32px;
+    padding-left: 50px;
 }
 
 .sessao-ensino .sessao-ensino__content .sessao-ensino__title {
@@ -20,7 +22,6 @@
     flex-direction: column;
     align-items: center;
     background-color: rgb(255, 255, 255);
-    width: 360px;
     margin-top: 25px;
     margin-bottom: 25px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -47,6 +48,9 @@
 .sessao-ensino .sessao-ensino__content .ensino__cards .card .ensino__cards__img img {
     width: 200px;
     padding: 10px 0 0 0;
+}
+.sessao-ensino .sessao-ensino__content .ensino__cards .card .ensino__cards__img p {
+    text-align: center;
 }
 
 .sessao-ensino .sessao-ensino__content .ensino__cards .card .predio{

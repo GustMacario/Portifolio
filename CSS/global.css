@@ -39,7 +39,7 @@
     height: 100vh;  
     background-color: #262626df;
     position: fixed;
-    left: -100%;
+    left: -200%;
     transition: 0.8s cubic-bezier(1, 0, 0, 1);
   }
   
@@ -58,6 +58,7 @@
       justify-content: space-between;
       padding: 20px;
       height: 100vh;
+      width: 100vw;
   }
   
   .hamburguer-menu {
@@ -92,7 +93,7 @@
   
   .menu-list{
       text-align: center;
-      padding-right: 25px;
+      padding-left: 0;
   }
   
   .menu-item{
@@ -167,13 +168,15 @@
     color: white;
 }
 
+
+
 .sessao-rodape--desktop{
     display: none;
 }
 
 .sessao-rodape .rodape__content {
     align-self: flex-end;
-    padding-top: 20px;
+    padding-top: 0;
     display: flex;
     flex-direction: column;
 }
@@ -184,7 +187,7 @@
 
 .sessao-rodape .rodape__content .rodape__contat h3 {
     text-align: center;
-    padding: 12px 0 20px 12px;
+    padding: 0px 0 20px 0px;
 
     font-weight: bold;
     color: white;
@@ -194,6 +197,7 @@
     list-style: none;
     color: white;
     font-weight: bold;
+    padding-left: 0;
 }
 
 .sessao-rodape .rodape__content .rodape__contat ul a {
@@ -206,7 +210,7 @@
 }
 
 .sessao-rodape .rodape__content .rodape__contat li {
-    
+    font-size: 15px;
     padding-bottom: 5px;
 }
 
@@ -215,8 +219,8 @@
 }
 
 .sessao-rodape .rodape__content .rodape__links h3 {
-    text-align: left;
-    padding: 12px 0 8px 12px;
+    text-align: center;
+    padding: 12px 0 8px 0;
     font-weight: bold;
     color: white;
 }
@@ -237,7 +241,7 @@
 }
 
 .sessao-rodape .rodape__content .rodape__links li {
-    
+    font-size: 15px;
     padding-bottom: 5px;
 }
 
@@ -248,11 +252,15 @@
 @media (min-width: 426px){
     .sessao-ensino .sessao-ensino__content .ensino__cards{
         display: grid;
-        grid-template-columns:repeat(2, 1fr);
+        grid-template-columns:repeat(1fr 1fr);
     }
 
     .sessao-ensino .sessao-ensino__content .ensino__cards .card{
+        width: 350px;
         margin: 0 5px;
+    }
+    .sessao-feedback .feedback__textarea{
+        padding-top: 5px;
     }
 }
 
@@ -265,7 +273,8 @@
         position: initial;
     }
 
-        .sessao-rodape--desktop{
+    
+    .sessao-rodape--desktop{
         background-color: #262626;
         position: sticky;
         display: flex;
@@ -338,7 +347,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between; 
-    }
+    }   
 
     .sessao-apresentacao__header .header__logo{
         padding-bottom: 15px;
@@ -350,6 +359,16 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+    }
+
+    .sessao-ensino .sessao-ensino__content{
+        position: absolute;
+        top: 0;    
+    }
+
+    .sessao-ensino .sessao-ensino__content .ensino__cards{
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
     }
 
     .sessao-ensino .sessao-ensino__content .ensino__cards .card{
